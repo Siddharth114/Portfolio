@@ -1,152 +1,321 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Portfolio Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/apple-touch-icon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-				<!-- Header -->
-					<!-- <header id="header" class="alt">
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header> -->
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-				<!-- Menu -->
-					<!-- <nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="#banner">Home</a></li>
-								<li><a href="#four">Projects</a></li>
-								<li><a href="#footer">Contact</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav> -->
+        <title>Siddharth's Portfolio Website</title>
+    </head>
+    <body>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Siddharth</h2>
-							<p>Student, Data Scientist, AI/Ml Enthusiast</p>
-						</div>
-					</section>
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="assets/img/perfil1.png">
+                        </div>
+                    </div>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+                    <h2 class="profile__name">Siddharth</h2>
+                    <h3 class="profile__profession">Student, Data Scientist, AI/ML enthusiast</h3>
+                    <ul class="profile__social">
+                        <a href="https://www.linkedin.com/in/siddharth-m-s-566aa71b6/" class="profile__social-link" target="_blank">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/Siddharth114" class="profile__social-link" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">7+</h3>
+                        <p class="profile__info-description">Completed <br> Projects</p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">3</h3>
+                        <p class="profile__info-description">Years of Formal<br>Education</p>
+                    </div>
+                </div>
+                <div class="profile__buttons">
+                    <a href="assets/pdf/Resume.pdf" class="button" download="">
+                        Download Resume
+                        <i class="ri-download-line"></i>
+                    </a>
+                    <div class="profile__buttons-small">
+                        <a href="https://api.whatsapp.com/send?phone=917358242037&text=Hello" class="button button__small button__gray" target="_blank">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="2004sid@gmail.com" class="button button__small button__gray" target="_blank">
+                            <i class="ri-mail-line"></i>
+                        </a>
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<div class="content">
-										<h2 class="major">Education</h2>
-										<p>High School Graduate</br>Undergraduate Mathematics Major</p>
-									</div>
-								</div>
-							</section>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<div class="content">
-										<h2 class="major">Skills</h2>
-										<img src='images/python_logo.svg', alt='Python' width="80px" height='80px'>
-										<img src='images/sql_logo.svg', alt='SQL' width="80px" height='80px'>
-										<img src='images/tableau_logo.svg', alt='Tableau' width="80px" height='80px'>
-										<img src='images/html_logo.svg', alt='HTML' width="80px" height='80px'>
-										<img src='images/css_logo.svg', alt='CSS' width="80px" height='80px'>
-										<img src='images/javascript_logo.svg', alt='JavaScript' width="80px" height='80px'>
-										<img src='images/java_logo.svg', alt='Java' width="80px" height='80px'>
-										<img src='images/solidity_logo.svg', alt='Solidity' width="80px" height='80px'>
-									</div>
-								</div>
-							</section>
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
 
-						<!-- Three -->
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <img src="assets/img/project1.jpg" alt="" class="projects__img">
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Projects</h2>
-									<section class="features">
-										<article>
-											<img src="images/mrs_thumbnail.jpeg" class="image"/>
-											<h3 class="major">Movie Recommender System</h3>
-											<p>A system which uses cosine similarity to produce recommendations to a selected movie.</p>
-											<a href="https://share.streamlit.io/siddharth114/movierecommendersystem/app.py" target = _blank class="special">Learn more</a>
-										</article>
-										<article>
-											<img src="images/pl_thumbnail.jpeg" class="image"/>
-											<h3 class="major">Premier League Player Stats Explorer</h3>
-											<p>An explorer of the statistics of players in the Premier League over the past ten seasons.</p>
-											<a href="https://share.streamlit.io/siddharth114/playerstats/player_stats.py" target = _blank class="special">Learn more</a>
-										</article>
-										<article>
-											<img src="images/covid_thumbnail.png" class="image"/>
-											<h3 class="major">India COVID Data Analysis</h3>
-											<p>An EDA of India's COVID statistics, to see if vaccinations have helped reduce the spread of the infection.</p>
-											<a href="https://github.com/Siddharth114/IndiaCovidData" target=_blank class="special">Learn more</a>
-										</article>
-										<article>
-											<img src="images/crypto_thumbnail.jpeg" class="image"/>
-											<h3 class="major">Cryptocurrency analysis</h3>
-											<p>An analysis of the most popular cryptocurrencies, including a regression model to predict the price of the currency.</p>
-											<a href="https://github.com/Siddharth114/CryptoPrices" target=_blank class="special">Learn more</a>
-										</article>
-										<article>
-											<img src="images/yt_thumbnail.png" class="image"/>
-											<h3 class="major">Youtube API</h3>
-											<p>A web scraping of all videos of a particular youtube channel and subsequently an EDA with relevant charts to help increase engagement rates.</p>
-											<a href="https://github.com/Siddharth114/YoutubeAPI" target=_blank class="special">Learn more</a>
-										</article>
-										<article>
-											<img src="images/funding_thumbnail.jpeg" class="image"/>
-											<h3 class="major">Web3 GoFundMe clone</h3>
-											<p>A clone of the popular crowdfunding platform GoFundMe built with JS, React.js, and Web3 components.</p>
-											<a href="https://github.com/Siddharth114/crowd_funding" target=_blank class="special">Learn more</a>
-										</article>
-									</section>
-								</div>
-							</section>
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Binary Classification</span>
+                                        <h3 class="projects__title">Customer Churn</h3>
+                                            <a href="#" class="projects__button button button__small">
+                                                <i class="ri-link"></i>
+                                            </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project2.jpg" alt="" class="projects__img">
 
-					</section>
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Recommendation Problem</span>
+                                        <h3 class="projects__title">Movie Recommender</h3>
+                                            <a href="#" class="projects__button button button__small">
+                                                <i class="ri-link"></i>
+                                            </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project3.jpg" alt="" class="projects__img">
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Contact</h2>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Chennai<br />
-									India
-								</li>
-								<li class="icon solid fa-envelope">2004sid@gmail.com</li>
-								<li class="icon solid fa-paperclip"><a href="images/Resume copy.pdf" download="Resume">Résumé</a></li>
-								<li class="icon brands fa-github"><a href="https://github.com/Siddharth114">Github</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/siddharth-m-s-566aa71b6/">LinkedIn</a></li>
-							</ul>
-							<ul class="copyright">
-							</ul>
-						</div>
-					</section>
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Data Explorer</span>
+                                        <h3 class="projects__title">PL Player Statistics</h3>
+                                            <a href="#" class="projects__button button button__small">
+                                                <i class="ri-link"></i>
+                                            </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
 
-			</div>
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">EDA</span>
+                                        <h3 class="projects__title">Indian COVID Data</h3>
+                                            <a href="#" class="projects__button button button__small">
+                                                <i class="ri-link"></i>
+                                            </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project5.jpg" alt="" class="projects__img">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">API+EDA</span>
+                                        <h3 class="projects__title">Youtube Channel API</h3>
+                                            <a href="#" class="projects__button button button__small">
+                                                <i class="ri-link"></i>
+                                            </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project5.jpg" alt="" class="projects__img">
 
-	</body>
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web3</span>
+                                        <h3 class="projects__title">GoFundMe Clone</h3>
+                                            <a href="#" class="projects__button button button__small">
+                                                <i class="ri-link"></i>
+                                            </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Data Scientist
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Tableau</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Lorem</h3>
+                                            <span class="skills__level">Ipsum</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Lorem</h3>
+                                            <span class="skills__level">Ipsum</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Lorem</h3>
+                                            <span class="skills__level">Ipsum</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Soft Skills
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Tableau</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Lorem</h3>
+                                            <span class="skills__level">Ipsum</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Lorem</h3>
+                                            <span class="skills__level">Ipsum</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Lorem</h3>
+                                            <span class="skills__level">Ipsum</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                Lorem ipsum dolor sit amet consectetur
+            </span>
+            
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
