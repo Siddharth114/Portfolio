@@ -36,8 +36,8 @@ html.sr .load-hidden {
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
@@ -170,8 +170,8 @@ body.dark-theme{
 }
 
 .profile__perfil{
-  width: 100px;
-  height: 100px;
+  width: 135px;
+  height: 135px;
   background: linear-gradient(180deg, 
                               hsla(var(--hue), var(--sat), var(--lig), 1) 0%, 
                               hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
@@ -183,15 +183,15 @@ body.dark-theme{
 }
 
 .profile__perfil img{
-  width: 100px;
+  width: 120px;
 
 }
 
 .profile__border{
   border: 3.5px solid var(--first-color);
   justify-self: center;
-  width: 115px;
-  height: 115px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -203,7 +203,7 @@ body.dark-theme{
 }
 
 .profile__profession{
-  font-size: var(--smaller-font-size);
+  font-size: var(--h3-font-size);
   font-weight: 500;
   color: var(--text-color);
   margin-bottom: 1rem;
@@ -212,11 +212,11 @@ body.dark-theme{
 .profile__social{
   display: flex;
   justify-content: center;
-  column-gap: .75rem;
+  column-gap: 2rem;
 }
 
 .profile__social-link{
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--title-color);
   transition: .3s;
 }
@@ -241,7 +241,7 @@ body.dark-theme{
 }
 
 .profile__info-description{
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   font-weight: 500;
 }
 
@@ -523,22 +523,23 @@ body.dark-theme{
   .profile{
     padding-top: 4rem;
   }
-
+  
   .profile__border{
-    width: 135px;
-    height: 135px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 1rem;
   }
 
   .profile__perfil{
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
   }
 
   .profile__perfil img{
-    width: 110px;
+    width: 120px;
   }
   .profile__profession{
+    font-size: var(--h3-font-size);
     margin-bottom: 1.5rem;
   }
   .profile__info{
